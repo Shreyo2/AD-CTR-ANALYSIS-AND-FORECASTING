@@ -1,6 +1,4 @@
 # AD-CTR-ANALYSIS-AND-FORECASTING
-from google.colab import drive
-drive.mount('/content/drive')
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -8,7 +6,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 from statsmodels.tsa.seasonal import seasonal_decompose
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("/content/drive/MyDrive/dataset/ctr.csv")
+data = pd.read_csv("/ctr.csv")
 print(data.head())
 data['date'].head()
 # Data Preparation
@@ -34,7 +32,6 @@ data['CTR'] = (data['Clicks'] / data['Impressions']) * 100
 fig = px.line(data, x=data.index, y='CTR', title='Click-Through Rate (CTR) Over Time')
 fig.show()
 data['DayOfWeek'] = data.index.dayofweek
-data['WeekOfMonth'] = data.index.week // 4
 
 # EDA based on DayOfWeek
 day_of_week_ctr = data.groupby('DayOfWeek')['CTR'].mean().reset_index()
