@@ -1,13 +1,3 @@
-# AD-CTR-ANALYSIS-AND-FORECASTING
-For my project, understanding and optimizing Ad CTR will be vital for enhancing advertising strategies and maximizing campaign success in the digital landscape.
-
-## Data Collection
-The dataset obtained contains information related to Ads CTR for a specific online advertising campaign. It consists of the following columns:
-1.Date: The date on which the data was recorded.
-2.Clicks: The number of times users clicked on the ads.
-3.Impressions: The total number of times the ads were displayed to users.
-4.CTR= (Clicks/Impressions)
-
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
