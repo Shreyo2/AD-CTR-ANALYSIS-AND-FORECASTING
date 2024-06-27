@@ -14,8 +14,6 @@ The dataset obtained contains information related to Ads CTR for a specific onli
 
 # Analysis:
 
-https://colab.research.google.com/drive/11mZ63AEDzMAY6xLv1Vsj00srd5JiDTSY#scrollTo=blpIhxjOFzDM&line=1&uniqifier=1
-
 Upon scrutinizing clicks and impressions, we observe a linear relationship heightened impressions correlate with increased clicks, emphasizing the positive impact of ad visibility on user engagement. Our analysis shows:
 
 - Visualizing the clicks and impressions over time we obtain greater fluctuations in impressions than that of in clicks over time.
